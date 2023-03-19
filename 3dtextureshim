@@ -1,0 +1,13 @@
+let img;
+function setup() {
+  createCanvas(400, 400, WEBGL);
+  img = loadImage("shim.jpeg");
+}
+
+function draw() {
+  background(200);
+  rotateX(pmouseX/50);
+  rotateY(pmouseY/50);
+  texture(img);
+  box(200);
+}
